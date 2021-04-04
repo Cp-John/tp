@@ -306,6 +306,7 @@ Format:
 
 Description:
 * Undoes the last add, delete or edit commands in the command history.
+* Does not support undo operation before `clear all`, `clear property`, and `clear appointment` because they also clear the command history.
 
 Examples:
 *  `undo` after command `delete appointment 1` adds the deleted appointment back to the app.
